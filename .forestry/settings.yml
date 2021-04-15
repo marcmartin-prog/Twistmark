@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/customers
+  label: Customer Pages
+  create: all
+  match: "**/*"
+  templates:
+  - customer-home-page
+- type: directory
   path: content
   label: Pages
   create: all
