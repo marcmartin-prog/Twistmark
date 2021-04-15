@@ -24,3 +24,5 @@ fields:
       format: markdown
   label: Business Description
   description: Enter the Business Description
+pages:
+- content/customers/Germantown.md
