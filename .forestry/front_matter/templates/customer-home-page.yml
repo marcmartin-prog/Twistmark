@@ -1,4 +1,26 @@
 ---
 label: Customer Home Page
 hide_body: true
-fields: []
+fields:
+- name: business_name
+  type: text
+  config:
+    required: false
+  label: Business Name
+  description: Enter the name of the business you are creating a page for.
+- name: business_logo
+  type: file
+  config:
+    maxSize: 64
+  label: Business Logo
+  description: Upload the Business Logo
+- name: business_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Business Description
+  description: Enter the Business Description
