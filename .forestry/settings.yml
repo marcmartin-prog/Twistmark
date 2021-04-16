@@ -9,7 +9,7 @@ sections:
   label: Customer Pages
   create: all
   match: "**/*"
-  new_doc_ext: ".html"
+  new_doc_ext: html
   templates:
   - customer-home-page
 - type: directory
