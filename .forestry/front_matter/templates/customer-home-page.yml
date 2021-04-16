@@ -2,6 +2,12 @@
 label: Customer Home Page
 hide_body: true
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Page Title
 - name: business_name
   type: text
   config:
