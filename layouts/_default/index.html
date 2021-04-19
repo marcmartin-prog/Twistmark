@@ -1,0 +1,6 @@
+{{ define "main" }}
+   {{ .Content}}
+   {{range where .Site.RegularPages "Section" "customers"}}
+      {{ partial "customer-sites.html" .Params}}
+   {{ end }}
+{{ end }}
