@@ -36,6 +36,12 @@ fields:
     required: false
   label: Vimeo Embed Code
   description: Enter the Vimeo Iframe code
+- name: video_attributes
+  type: text
+  config:
+    required: false
+  label: Video attributes
+  description: attributes of the video
 pages:
 - content/customers/Germantown.md
 - content/customers/germantown-animal-hospital.html
