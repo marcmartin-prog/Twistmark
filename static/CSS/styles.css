@@ -1,0 +1,81 @@
+
+
+body{
+  background-image: url("/images/background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+}
+
+section{
+  padding: 0.8rem;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.hamburger{
+  margin: 1rem;
+}
+
+.hero{
+  margin: 1rem 1.5rem;
+  background-color: black;
+
+}
+
+.hero img{
+  max-width: 100%;
+}
+
+.hero-links{
+  margin: auto;
+  max-width: 9rem;
+}
+
+.home-logo a{
+  color: rgb(190, 210, 76);
+  text-decoration: none;
+  margin: auto;
+}
+
+.home-logo p {
+  color: rgb(190, 210, 76);
+}
+
+.logo img{
+  height: 3rem;
+}
+
+.menu {
+  display: none;
+}
+
+.search{
+  margin-top: 1rem;
+}
+
+.services{
+  background-color: rgb(190, 210, 76);
+  border: 3px solid rgb(190, 46, 115);
+  margin-top: 1rem;
+}
+
+.services li {
+line-height: 1.5;
+text-align: center;
+}
+
+.services ul{
+  padding-inline-start: 0;
+}
