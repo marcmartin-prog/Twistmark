@@ -2,6 +2,13 @@
 title: "Home"
 date: 2021-04-15T06:43:37-05:00
 draft: false
+url: /
+layout: index
+resources:
+- src: "gallery/*.jpg"
+  name: gallery-:counter
+  title: gallery-title-:counter
+
 ---
 
 <!-- Main Hero Section -->
@@ -35,7 +42,9 @@ draft: false
 
 <!--Gallery and About Section-->
 <section>
-
+    <div class="">
+      {{< gallery folder="gallery" title="" >}}
+    </div>
 </section>
 
 
@@ -44,21 +53,22 @@ draft: false
 
 </section>
 
-<!--Contact Us Section-->
+<!--Contact Us, Hours, and FB Section-->
 <section>
-  <div class="">
-    <h2>Contact</h2>
-
+  <div class="card">
+    <div class="card-head">
+          <h2>Contact</h2>
+    </div>
+    <div class="card-content">
+      <div class="">
+        <img src="" alt="">
+        <p>Twistmark Media Network <br> <a href="#">582 CR 759 <br> Jonesboro AR 72405</a></p>
+      </div>
+      <div class="">
+        <img src="" alt="">
+        <a href="tel:8709740095">(870)-974-0095</a>
+      </div>
+    </div>
   </div>
-
-</section>
-
-<!--Hours section-->
-<section>
-
-</section>
-
-<!--FB Section-->
-<section>
 
 </section>
