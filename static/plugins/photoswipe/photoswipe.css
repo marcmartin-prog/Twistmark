@@ -1,8 +1,4 @@
-/*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
-/*
-	Styles for basic PhotoSwipe functionality (sliding area, open/close transitions)
-*/
-/* pswp = photoswipe */
+
 .pswp {
   display: none;
   position: absolute;
@@ -23,6 +19,11 @@
             box-sizing: border-box; }
   .pswp img {
     max-width: none; }
+    /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
+    /*
+    	Styles for basic PhotoSwipe functionality (sliding area, open/close transitions)
+    */
+    /* pswp = photoswipe */
 
 /* style is added when JS option showHideOpacity is set to true */
 .pswp--animate_opacity {
