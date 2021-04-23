@@ -1,3 +1,4 @@
+
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 // parse slide data (url, title, size ...) from DOM elements
@@ -182,3 +183,4 @@ if(hashData.pid > 0 && hashData.gid > 0) {
     openPhotoSwipe( hashData.pid - 1 ,  galleryElements[ hashData.gid - 1 ], true );
 }
 };
+initPhotoSwipeFromDOM('.gallery');

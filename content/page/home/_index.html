@@ -1,13 +1,14 @@
 ---
 title: "Home"
 date: 2021-04-15T06:43:37-05:00
-draft: false
-url: /
-layout: index
+draft: false.
 resources:
 - src: "gallery/*.jpg"
   name: gallery-:counter
   title: gallery-title-:counter
+url: /
+layout: index
+
 
 ---
 
@@ -41,10 +42,11 @@ resources:
 </section>
 
 <!--Gallery and About Section-->
+      {{< gallery folder="gallery" title="Gallery" >}}
 <section>
     <div class="about-us">
       <div class="gallery-parent">
-        {{< gallery folder="gallery" title="Gallery" >}}
+
       </div>
       <div class="text">
         <h2>About Us</h2>
