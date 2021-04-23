@@ -64,5 +64,11 @@ fields:
       maxSize: 64
     label: thumbnail
     description: Upload the thumbnail for the video / link here
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    description: Add the title of the resource
   label: Important Events
   description: Add Links to the list of important events and links
