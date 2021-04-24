@@ -1,4 +1,74 @@
 ---
 label: Home Page
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: H
+  hidden: true
+  default: Home
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  hidden: true
+  default: now
+- name: resources
+  type: field_group
+  config: {}
+  fields:
+  - name: src
+    type: text
+    config:
+      required: false
+    label: src
+    hidden: true
+    default: '"gallery/*.jpg"'
+  - name: name
+    type: text
+    config:
+      required: false
+    label: name
+    hidden: true
+    default: gallery-:counter
+  - name: title
+    type: text
+    config:
+      required: false
+    label: title
+    hidden: true
+    default: gallery-title-:counter
+  label: resources
+  description: Gallery Resources and uploads
+- name: important_events
+  type: field_group
+  config: {}
+  fields:
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+    description: Add the link for the content you want to show
+  - name: thumbnail
+    type: file
+    config:
+      maxSize: 64
+    label: thumbnail
+    description: Upload the thumbnail for the video / link here
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+    description: Add the title of the resource
+  label: Important Events
+  description: Add Links to the list of important events and links
