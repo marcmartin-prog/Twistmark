@@ -12,6 +12,7 @@ hamburger.addEventListener('click', function(){
   }
 });
 
+//events horizontal scrolling
 
 const events = document.querySelector('.events');
 const leftArrow = document.querySelector('.arrow-left');
@@ -24,4 +25,20 @@ leftArrow.addEventListener('click', function(){
 
 rightArrow.addEventListener('click', function(){
   events.scrollLeft +=400;
+});
+
+
+//gallery horizontal scrolling
+const galleryLArrow = document.querySelector('.ga-arrow-left');
+const galleryRArrow = document.querySelector('.ga-arrow-right');
+const galleryItem = document.querySelector('.gallery-item');
+const itemWidth = document.querySelector('.row').clientWidth;
+const scroller = document.querySelector('.gallery');
+
+galleryLArrow.addEventListener('click', function(){
+  scroller.scrollBy({left: -itemWidth, top: 0, behavior: 'smooth'});
+});
+
+galleryRArrow.addEventListener('click', function(){
+  scroller.scrollBy({left: itemWidth, top: 0, behavior: 'smooth'});
 });
