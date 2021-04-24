@@ -1,4 +1,12 @@
+a{
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
 
+a:hover{
+  opacity: 0.5;
+}
 
 body{
   background-image: url("/images/background.jpg");
@@ -7,6 +15,24 @@ body{
   background-size: cover;
   background-position: center center;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+}
+
+footer img{
+  margin: 1rem;
+}
+
+footer p, footer a{
+  color: white;
+  font-size: 0.5rem;
+  margin-top: 1rem
 }
 
 header{
@@ -18,6 +44,7 @@ header{
 
 section{
   padding: 0.8rem;
+  position: relative;
 }
 
 ul{
@@ -32,18 +59,98 @@ ul{
   color: white;
 }
 
+.address span{
+  margin: auto 0.5rem auto 0;
+}
+
+.arrow-left{
+  position: absolute;
+  left: 1rem;
+  top: 49%;
+  background-color: white;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+}
+
+.arrow-right{
+  position: absolute;
+  right: 1rem;
+  top: 49%;
+  background-color: white;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+}
+
 .card{
   background-color: white;
-
+  margin: 2rem 0;
 }
 
 .card-content{
   padding: 0 0.8rem 0.8rem;
 }
+.card-content>div{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
 
 .card-head{
   background-color: #f3f3f3;
   padding: 0.2rem 0.8rem;
+}
+
+.disable-scrollbars::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.event{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 0.5rem;
+}
+
+.event img{
+  width: 10rem;
+}
+
+.event h4{
+  text-align: center;
+  margin-block-start: 0.2rem;
+}
+
+.events{
+  display: flex;
+  overflow-x: scroll;
+  padding: 0.8rem;
+  position: relative;
+}
+
+.fa-clock:before{
+  margin: 0 8px 0 0;
+  opacity: 0.7;
+}
+
+.fb-page{
+  margin: auto;
+}
+
+.fa-home:before, .fa-phone:before{
+  color: #69bd45;
+  padding: 8px 8px;
+  border-radius: 50%;
+  background-color: #f3f3f3;
+  width: 1.1rem;
+  height: 1.1rem;
+
 }
 
 .hamburger{
@@ -71,8 +178,26 @@ ul{
   margin: auto;
 }
 
+
+
 .home-logo p {
   color: rgb(190, 210, 76);
+}
+
+.hours li{
+  display: flex;
+  justify-content: space-between;
+  margin-left: -1.5rem;
+  margin-right: 0.8rem;
+}
+
+.imp-events{
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.8rem;
+}
+
+.imp-events h2{
+  text-align: center;
 }
 
 .logo img{
@@ -81,6 +206,25 @@ ul{
 
 .menu {
   display: none;
+}
+
+.mobile-menu{
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  padding: 20%;
+  display: none;
+  z-index: 2
+  
+}
+
+.mobile-menu a{
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2;
 }
 
 .search{
@@ -112,8 +256,11 @@ text-align: center;
 
 .gallery{
   width: 100%;
-  display: block;
+  display: flex;
   margin:0 auto;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+
 }
 
 /* Extra Small Devices, Phones */
@@ -121,6 +268,7 @@ text-align: center;
   .gallery {
     column-count: 1;
     column-gap: 3px;
+
   }
 }
 /* Small Devices, Tablets */
@@ -150,8 +298,10 @@ text-align: center;
 
 
 .gallery-item { /* Masonry bricks or child elements */
+    scroll-snap-align: start;
     background-color: #eee;
     display: inline-block;
     margin: 0 0 0.2rem;
     width: auto;
+
 }
