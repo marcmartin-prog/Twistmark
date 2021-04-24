@@ -252,6 +252,55 @@ text-align: center;
   padding: 0.8rem;
 }
 
+@media only screen and (min-width : 768px) {
+
+  header{
+    padding-right: 0.8rem;
+  }
+
+  p, li{
+    font-size: 1.2rem;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  .hero{
+    display: flex;
+
+  }
+
+  .logo img{
+    height: 4.5rem;
+  }
+
+  .menu{
+    display: flex;
+  }
+
+  .menu ul{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu a{
+    color: white;
+    margin: 0 0.5rem;
+  }
+
+  .services{
+    min-width: 20rem;
+    border-width: 5px;
+    margin: 1rem;
+  }
+
+  .services li{
+    font-weight: bold;
+    line-height: 1.8;
+  }
+}
+
 /**/
 /* GALLERY */
 /**/
