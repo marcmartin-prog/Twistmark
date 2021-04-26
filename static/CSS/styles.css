@@ -43,6 +43,10 @@ header{
   padding-top: 0.8rem;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 section{
   padding: 0.8rem;
   position: relative;
@@ -160,7 +164,6 @@ ul{
 }
 
 .hero{
-  margin: 1rem 1.5rem;
   background-color: black;
   padding: 0.8rem;
 }
@@ -256,11 +259,29 @@ text-align: center;
 
   header{
     padding-right: 0.8rem;
+    justify-content: space-around;
   }
 
   p, li{
     font-size: 1.2rem;
   }
+
+  .about-us{
+    display: flex;
+  }
+
+  .event img{
+    width: 15rem;
+  }
+
+  .fb-page{
+    width: 22rem;
+  }
+
+  .gallery-parent{
+    max-width: 25rem;
+    position: relative;
+ }
 
   .hamburger{
     display: none;
@@ -298,6 +319,99 @@ text-align: center;
   .services li{
     font-weight: bold;
     line-height: 1.8;
+  }
+}
+
+@media only screen and (min-width : 1079px){
+
+  h2{
+    font-size: 2.5rem;
+  }
+  p, a{
+    font-size: 1.6rem;
+  }
+
+ .card{
+   margin-right: 2rem;
+ }
+
+  .contacts{
+    display: flex;
+  }
+
+  .event img{
+    width: 20rem;
+  }
+
+  .fb-page{
+    margin-top: 1rem;
+  }
+
+  .gallery-parent{
+    max-width: 40rem;
+  }
+
+  .gallery-item img{
+    width: 40rem;
+  }
+
+.hero-links{
+  display: flex;
+  max-width: 45rem;
+}
+
+.logo img{
+  height: 6.5rem;
+}
+
+.services li{
+  font-size: 1.7rem;
+}
+
+}
+
+@media only screen and (min-width : 1239px){
+  section{
+    padding: 1.5rem;
+  }
+
+  .card{
+    min-width: 25rem;
+  }
+
+  .services{
+    min-width: 30rem;
+  }
+
+  .services li{
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width : 1439px){
+
+  .card{
+    min-width: 30rem;
+  }
+
+  .event img{
+    width: 30rem;
+  }
+
+  .gallery-parent{
+    max-width: 50rem;
+  }
+
+  .gallery-item img{
+    width: 50rem;
+  }
+
+  .services{
+    min-width: 40rem;
+  }
+  .services li{
+    font-size: 2.5rem;
+    line-height: 2;
   }
 }
 
