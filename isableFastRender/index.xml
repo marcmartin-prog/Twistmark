@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TwistMark Media Network</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on TwistMark Media Network</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Apr 2021 06:43:37 -0500</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home</title>
+      <link>http://localhost:1313/</link>
+      <pubDate>Thu, 15 Apr 2021 06:43:37 -0500</pubDate>
+      
+      <guid>http://localhost:1313/</guid>
+      <description>About Us Twistmark Media provides social media management, digital marketing, video production, strategic marketing, and creation of custom TV channels to improve client education and grow your business.
+   Important Events and Links LIVE Broadcasting  Live TV  Featured TV Network  Strategic Marketing - POY  Strategic Marketing -POM  Custom TV / Videos  Client Education         Contact   Twistmark Media Network 582 CR 759 Jonesboro AR 72405</description>
+    </item>
+    
+    <item>
+      <title>Germantown Animal Hospital</title>
+      <link>http://localhost:1313/customers/germantown-animal-hospital/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/customers/germantown-animal-hospital/</guid>
+      <description>This is the home page for germantown animal Hospital</description>
+    </item>
+    
+  </channel>
+</rss>
