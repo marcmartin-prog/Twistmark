@@ -180,6 +180,7 @@ ul{
 .gallery-item{
   position: relative;
   left: -8px;
+  margin-bottom: -8px;
 }
 
 .gallery-item img{
@@ -426,7 +427,7 @@ ul{
   }
 
   .event img{
-    width: 18rem;
+    width: 24rem;
   }
 
   .gallery-parent{
