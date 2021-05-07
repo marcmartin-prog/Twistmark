@@ -38,7 +38,7 @@ const scroller = document.querySelector('.gallery');
 galleryLArrow.addEventListener('click', galleryScrollLeft);
 
 galleryRArrow.addEventListener('click', galleryScrollRight);
-
+/*
 function galleryScrollRight(){
     scroller.scrollBy({left: itemWidth, top: 0, behavior: 'smooth'});
 }
@@ -48,3 +48,4 @@ function galleryScrollLeft(){
 }
 
 setInterval(galleryScrollRight, 3000);
+*/
