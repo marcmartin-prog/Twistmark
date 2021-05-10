@@ -123,7 +123,7 @@ ul{
     width: 0!important;
     background: transparent; /* Chrome/Safari/Webkit */
     height: 0!important;
-    display: none: !important;
+    display: none!important;
 }
 
 
@@ -180,10 +180,12 @@ ul{
 
 .gallery-item{
   position: relative;
+  left: -8px;
+  margin-bottom: -8px;
 }
 
 .gallery-item img{
-  max-width: 92vw;
+  max-width: 95vw;
 }
 
 .hamburger{
@@ -288,7 +290,8 @@ ul{
   }
 
   .about-us{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .event img{
@@ -302,10 +305,6 @@ ul{
   .gallery-parent{
     max-width: 25rem;
     position: relative;
- }
-
- .gallery-item{
-   left: 0;
  }
 
   .hamburger{
@@ -335,13 +334,6 @@ ul{
   .services li{
     font-weight: bold;
     line-height: 1.8;
-  }
-
-  .text p{
-    margin-block-start: 0;
-  }
-  .text h2{
-    margin-block-end: 10px;
   }
 }
 
@@ -502,6 +494,7 @@ ul{
     scroll-snap-align: start;
     background-color: #eee;
     display: inline-block;
+    margin: 0 0 0.2rem;
     width: auto;
 
 }
