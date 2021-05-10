@@ -79,7 +79,7 @@ ul{
 .arrow-left, .ga-arrow-left{
   position: absolute;
   left: 1rem;
-  top: 49%;
+  top: 40%;
   background-color: #f3f3f3;
   padding: 0.5rem 0.7rem;
   border-radius: 50%;
@@ -88,7 +88,7 @@ ul{
 .arrow-right, .ga-arrow-right{
   position: absolute;
   right: 1rem;
-  top: 49%;
+  top: 40%;
   background-color: #f3f3f3;
   padding: 0.5rem 0.7rem;
   border-radius: 50%;
@@ -180,12 +180,12 @@ ul{
 
 .gallery-item{
   position: relative;
-  left: -8px;
+  left: 0;
   margin-bottom: -8px;
 }
 
 .gallery-item img{
-  max-width: 95vw;
+  max-width: 90vw;
 }
 
 .hamburger{
@@ -276,6 +276,9 @@ ul{
 
 .text{
   padding: 0.8rem;
+  position: relative;
+  background-color: rgb(40, 40, 40);
+  top: -9px;
 }
 
 @media only screen and (min-width : 768px) {
@@ -287,6 +290,15 @@ ul{
 
   p, li{
     font-size: 1.2rem;
+  }
+
+
+  .arrow-left, .ga-arrow-left{
+    top: 49%
+  }
+
+  .arrow-right, .ga-arrow-right{
+    top: 49%;
   }
 
   .about-us{
